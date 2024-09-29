@@ -1,240 +1,48 @@
-@charset "UTF-8"; 
-/*
-    https://www.ufac.br/
-    https://www.ifpi.edu.br/
-*/
-
-@font-face {
-    font-family: 'escolar';
-    src: url('fontes/Letters for Learners.ttf') format('truetype');
-}
-
-
-:root {
-    /*
-    --cor0: #F4D6CC;
-    --cor1: #b8e497;
-    --cor2: #309F41;
-    --cor3: #195522;
-    --cor5: #DA251C;
-    */
-    --cor0: #F4D6CC;
-    --cor1: #b8e497;
-    --cor2: #309F41;
-    --cor3: #195522;
-    --cor5: #DA251C;
-}
+@charset "utf-8";
 
 * {
     margin: 0px;
     padding: 0px;
 }
 
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--cor0);
-}
-
-p {
-    text-align: justify;
+:root {
+    --cor0: #01415B;
+    --cor1: #005148;
+    --cor2: #019587;
+    --cor3: #A6BC09;
+    --cor4: #CCEA8D;
 }
 
 header {
-    background-color: var(--cor2);
-    height: 169px;
-    width: 100%;
+    height: 60vh;
+    background-color: var(--cor1);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('../imagens/fundo/ifpi-fundo8.png');
+    padding: 20px;
 }
 
 header h1 {
-    background-color: var(--cor3);
-    color: white;
-    padding: 10px;
-    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.616);
-}
-
-nav {
-    background-color: var(--cor2);
-    margin-top: 10px;
-    text-align: right;
-}
-
-nav a {
-    color: white;
-    background-color: var(--cor3);
-    text-decoration: none;
-    padding: 10px;
-    border-radius: 5px;
-    transition-duration: 0.7s;
-}
-
-nav a:hover {
-    color: rgba(255, 255, 255, 0.753);
-    background-color: #42af53ad;
-}
-aside {
-    background-color: white;
-    max-height: 950px;
-    max-width: 950px;
-    margin: 5px auto 0px auto;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.158);
-}
-
-aside h1 {
-    font-family: 'escolar', Arial, Helvetica, sans-serif;
     text-align: center;
-    margin-bottom: 10px;
-    font-size: 3em;
-    text-shadow: 2px 2px 2px rgb(0 0 0 / 20%);
-}
-
-aside hr {
-    margin-bottom: 10px;
-}
-
-aside a {
-    text-decoration: none;
-    display: inline-block;
-    background-color: rgb(83, 151, 92);
-    height: 300px;
-    width: 300px;
-    border-radius: 50%;
-    transition-duration: 0.8s;
-    margin: 10px 6px 0px 6px;
-}
-aside a:hover {
-    background-color: #53975c96;
-    border: 1px solid gray;
-}
-
-aside span.material-symbols-outlined {
-    display: block;
+    font-weight: bold;
+    font-variant: small-caps;
     color: white;
-    font-size: 80px;
-    margin: 0px 0px 0px 107px;
+    text-shadow: 1px 1px black;
 }
 
-aside a > p {
-    color: white;
-    text-align: center;
-    font-size: 1.8em;
-    margin-top: 105px;
-
+hr {
+    border-color: white;
+    border-style::outset
 }
 
 main {
-    background-color: var(--cor1);
-    padding: 10px;
-    
-}
-
-article {
-    background-color: var(--cor0);
-    max-height: 1400px;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 1px 2px 3px 1px rgba(0, 0, 0, 0.158);
-    padding-bottom: 25px;
-}
-
-article > h1 {
-    border-radius: 10px 10px 0px 0px;
-    padding: 5px;
     background-color: var(--cor2);
-    color: white;
-    margin-bottom: 20px;
-    padding-left: 15px;
 }
 
-article > div.conteudo {
-    padding: 20px;
-    max-width: 300px;
-    max-height: 300px;
-    display: inline-block;
-    background-color: white;
-    border: 1px solid rgba(128, 128, 128, 0.281);
-    margin: 10px 60px 0px 60px;
-}
 
-div.conteudo img {
-    width: 300px;
-}
-
-div.conteudo p {
-    padding-top: 6px;
-}
-div.conteudo:hover {
-    box-shadow: 2px 2px 13px white;
-}
-
-article a {
-    text-decoration: none;
-    color: black;
-}
-
-article a:hover {
-    text-decoration: underline;
-}
-
-section {
-    background-color: #113b18;
-    padding: 30px;
-}
-
-div.bloco a {
-    color: white;
-    background-color: #2a6833;
-    display: inline-block;
-    height: 200px;
-    width: 200px;
-    margin: 0px 30px 20px 60px;
-    border-radius: 10px;
-    text-decoration: none;
-}
-
-div.bloco a:hover {
-    font-weight: bolder;
-    background-color: #548d5c;
-}
-
-section h1 {
-    text-align: center;
-    font-size: 2.5em;
-    color: white;
-    margin-bottom: 30px;
-}
-
-div.bloco {
-    max-width: 1300px;
-    margin: 0px auto 0px auto;
-}
-
-div.bloco p {
-    text-align: center;
-    padding-top: 92px;
-}
 
 footer {
-    padding: 20px;
-    background-color: var(--cor2);
-    
-}
-
-footer a {
-    display: inline-block;
-    color: black;
-    text-decoration: none
-}
-
-footer a:hover {
     color: white;
+    background-color: black;
 }
-
-footer h1 {
-    color: white;
-    margin-bottom: 15px;
-    margin-top: 15px;
-}
-
-
