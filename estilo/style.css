@@ -12,28 +12,40 @@
     --cor3: #A6BC09;
     --cor4: #CCEA8D;
 }
+body, html {
+    background-color:white;
+}
+
+h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+    font-variant: small-caps;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
 
 header {
-    height: 60vh;
-    background-color: var(--cor1);
-    background-position: right bottom;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('../imagens/fundo/ifpi-fundo8.png');
+    height: 20vh;
+    background-image: radial-gradient(circle, var(--cor1), #012d29 102%) ;
     padding: 20px;
 }
 
 header h1 {
+    font-size: 2.6em;
     text-align: center;
     font-weight: bold;
     font-variant: small-caps;
     color: white;
     text-shadow: 1px 1px black;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 hr {
     border-color: white;
-    border-style::outset
+    border-style: outset;
 }
 
 main {
