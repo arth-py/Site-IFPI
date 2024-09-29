@@ -13,7 +13,7 @@
     --cor4: #CCEA8D;
 }
 body, html {
-    background-color:white;
+    background-color:rgb(255, 255, 255);
 }
 
 h2 {
@@ -29,11 +29,12 @@ h2 {
 header {
     height: 20vh;
     background-image: radial-gradient(circle, var(--cor1), #012d29 102%) ;
-    padding: 20px;
+    padding: 0px 20px 20px 20px;
+    position: relative;
 }
 
 header h1 {
-    font-size: 2.6em;
+    font-size: 4vh;
     text-align: center;
     font-weight: bold;
     font-variant: small-caps;
@@ -43,18 +44,112 @@ header h1 {
     padding-top: 10px;
 }
 
+header img {
+    scale: 40%;
+}
+
 hr {
     border-color: white;
     border-style: outset;
+}
+
+.barra-navigation {
+    position: absolute;
+    top:87%
+}
+
+nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
 }
 
 main {
     background-color: var(--cor2);
 }
 
+section.campi {
+    list-style-type: none ;
+    text-align: center;
+    background-color:#012d29;
+    padding: 30px;
+}
 
+section.campi li {
+    display: inline-block;
+    background-color: #01415B;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 10px 15px 10px 15px;
+    
+}
+
+li a {
+    height: 200px;
+    display: block ;
+    background-color: rgba(0, 0, 0, 0.758);
+    border-radius: 50%;
+    position: relative;
+    transition-duration: 0.7s;
+}
+
+li a:hover {
+    background-color: rgba(0, 0, 0, 0.166) ;
+    box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.503);
+}
+
+
+li p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: lighter;
+    font-size: 2em;
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+li#academicos {
+    background-image: url('../imagens/noticias/noticia2.jpeg');
+    background-position: center right;
+}
+
+li#cursos {
+    background-image: url('../imagens/fundo/cursos1.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center
+}
+
+li#pesquisa {
+    background-image:url('../imagens/fundo/pessoa-pesquisando.jpg');
+    background-size: 200px 350px;
+    background-position: center center;
+}
+
+li#outros {
+    background-image:url('../imagens/fundo/ifpi-fundo.jpg') ;
+    background-size: 300px 250px;
+    background-position: center center;
+}
 
 footer {
     color: white;
     background-color: black;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
 }
